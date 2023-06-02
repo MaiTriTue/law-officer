@@ -46,6 +46,9 @@ const Header: React.FC = () => {
         if (ShowMenuRef.current) {
             ShowMenuRef.current.classList.add('hidden');
         }
+        if (TooggleSubNav) {
+            HandleOpenCloseMenu();
+        }
     };
     const HandleOpenCloseMenu = () => {
         if (SubNavRef.current && rotateSuvNavRef.current) {
@@ -257,7 +260,7 @@ const Header: React.FC = () => {
 
             <div
                 ref={ShowMenuRef}
-                className="w-full min-h-full  bg-black04 absolute top-0 left-0  hidden"
+                className="w-full min-h-full  bg-black04 fixed top-0 left-0 right-0 bottom-0  hidden "
                 // className="w-full bg-black04  fixed top-0 left-0 bottom-0 right-0  hidden"
             >
                 <div className=" w-3/4 h-full min-h-[100vh] bg-[#222222]   flex   justify-end relative  ">
@@ -337,6 +340,7 @@ const Header: React.FC = () => {
                                             <Link
                                                 href={item.link}
                                                 key={index}
+                                                onClick={HandleCloseMenu}
                                                 className="py-1.5 pl-3 flex  justify-start items-center  text-[#cccccc] border-y  border-[#2D2D2D]  "
                                             >
                                                 <FontAwesomeIcon
@@ -371,7 +375,7 @@ const Header: React.FC = () => {
                                                 </Link>
                                                 <ul
                                                     ref={SubNavRef}
-                                                    className="w-full bg-[#333] pl-5 hidden"
+                                                    className="w-full h-[35vh] bg-[#333] pl-5 hidden overflow-y-scroll"
                                                 >
                                                     {SubnavbarData &&
                                                         SubnavbarData.map(
