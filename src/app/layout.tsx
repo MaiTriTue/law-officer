@@ -1,6 +1,5 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { Suspense } from 'react';
 
 import { Header, Footer } from '~/components/defaultLayout';
 

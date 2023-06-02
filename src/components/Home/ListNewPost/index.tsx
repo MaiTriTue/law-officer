@@ -26,12 +26,15 @@ const ListNewPost: React.FC = () => {
                 {newPostData &&
                     newPostData.map((item, index) => {
                         return (
-                            <div className="w-full snap-center pb-1.5  border-b border-[#ccc]">
+                            <div
+                                className="w-full snap-center pb-1.5  border-b border-[#ccc]"
+                                key={index}
+                            >
                                 <Link
-                                    href={newPostData[0].link}
+                                    href={item.link}
                                     className="text-sm text-[#333333]"
                                 >
-                                    {newPostData[0].title}
+                                    {item.title}
                                 </Link>
                             </div>
                         );

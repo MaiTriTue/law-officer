@@ -349,12 +349,11 @@ const Header: React.FC = () => {
                                         );
                                     } else if (index === 3) {
                                         return (
-                                            <>
+                                            <div key={index}>
                                                 <Link
                                                     onClick={
                                                         HandleOpenCloseMenu
                                                     }
-                                                    key={index}
                                                     href={item.link}
                                                     className="py-1.5 pl-3 flex justify-between items-center  text-[#cccccc] border-b  border-[#2D2D2D] transition-all"
                                                 >
@@ -404,7 +403,7 @@ const Header: React.FC = () => {
                                                             },
                                                         )}
                                                 </ul>
-                                            </>
+                                            </div>
                                         );
                                     } else {
                                         return (
