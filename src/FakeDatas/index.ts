@@ -3,7 +3,7 @@ import images from '~/assets/images';
 
 const COMPANY_INFORMATION = {
     organization: 'ĐOÀN LUẬT SƯ TP.HỒ CHÍ MINH',
-    name: ' CÔNG TY LUẬT TNHH MTV PHÚC MINH ANH',
+    name: 'CÔNG TY LUẬT TNHH MTV PHÚC MINH ANH',
     phoneNumber: '0703681368',
     Tel: '703681368',
     email: 'luatsuhuyvinh@gmail.com',

@@ -110,14 +110,14 @@ const Header: React.FC = () => {
                 </div>
                 <div className="w-[77%] pt-6 xl:pt-12 px-5 ">
                     <div className="w-full text-center py-auto ">
-                        <h3 className="text-lg xl:text-3xl font-bold textCustom">
+                        <h3 className=" drop-shadow text-sm  xl:text-3xl font-bold textCustom">
                             {CompanyInformation.organization}
                         </h3>
-                        <h3 className="text-lg xl:text-3xl font-bold textCustom">
+                        <h3 className=" drop-shadow text-sm xl:text-3xl font-bold textCustom">
                             {CompanyInformation.name}
                         </h3>
                     </div>
-                    <div className="w-full text-xs  pt-3  xl:hidden">
+                    <div className="w-full text-xs  pt-3  hidden">
                         <div className="w-full   ">
                             <FontAwesomeIcon
                                 icon={faPhone}
@@ -257,9 +257,10 @@ const Header: React.FC = () => {
 
             <div
                 ref={ShowMenuRef}
-                className="w-full bg-black04  fixed top-0 left-0 bottom-0 right-0  hidden"
+                className="w-full min-h-full  bg-black04 absolute top-0 left-0  hidden"
+                // className="w-full bg-black04  fixed top-0 left-0 bottom-0 right-0  hidden"
             >
-                <div className=" w-3/4 h-full  bg-[#222222]   flex   justify-end relative  ">
+                <div className=" w-3/4 h-full min-h-[100vh] bg-[#222222]   flex   justify-end relative  ">
                     <div className="w-full ">
                         {/* start button close */}
                         <div
@@ -275,7 +276,7 @@ const Header: React.FC = () => {
                         {/* start input search */}
                         <div className="w-full pt-4 pb-1.5 px-5 ">
                             <div className="w-full bg-white py-1 px-3  border border-solid border-black rounded-3xl relative">
-                                <button className="w-[10%] h-full px-2.5  absolute right-0 top-0">
+                                <button className="w-[10%] h-full px-2.5  absolute right-3 top-0">
                                     <FontAwesomeIcon
                                         icon={faMagnifyingGlass}
                                         className="text-base text-black inline-block mx-auto"
@@ -328,7 +329,7 @@ const Header: React.FC = () => {
                         </div>
                         {/* end sosial network  */}
                         {/* start navbarr list */}
-                        <div className="w-full ">
+                        <div className="w-full">
                             {navbarData &&
                                 navbarData.map((item, index) => {
                                     if (index === 0) {
@@ -363,7 +364,7 @@ const Header: React.FC = () => {
 
                                                     <FontAwesomeIcon
                                                         icon={faAngleDown}
-                                                        // className="text-md mr-4 "
+                                                        className="text-md mr-4 "
                                                         size="xs"
                                                         ref={rotateSuvNavRef}
                                                     />

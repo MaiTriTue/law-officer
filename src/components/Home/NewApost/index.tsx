@@ -19,15 +19,13 @@ const NewApost: React.FC = () => {
     }, [GoodPostData]);
 
     return (
-        <div className="w-full px-3 overflow-hidden">
-            <div className="w-full h-[37vw] xl:h-[250px]  overflow-hidden">
+        <div className="w-full px-3 pt-3 xl:pt-0 overflow-hidden">
+            <div className="w-full  xl:h-[250px] rounded  overflow-hidden">
                 <Link href={newApost.link} className="w-full ">
                     <Image
                         src={newApost.image}
                         alt={newApost.title}
-                        // width={100}
-                        // height={100}
-                        className="w-full object-cover mt-12"
+                        className="w-full object-cover  xl:mt-12"
                     />
                 </Link>
             </div>
