@@ -18,7 +18,10 @@ const ListPost: React.FC = () => {
             {ListPostData &&
                 ListPostData.map((item, index) => {
                     return (
-                        <div className="w-full mb-2.5 pb-1.5 border-b border-[#999]">
+                        <div
+                            key={index}
+                            className="w-full mb-2.5 pb-1.5 border-b border-[#999]"
+                        >
                             <div className="w-full  line-clamp-6 xl:line-clamp-4  overflow-hidden   ">
                                 <div className="w-1/3 float-left mr-2 xl:mb-2  rounded  overflow-hidden ">
                                     <Link href={item.link} className="w-full ">
