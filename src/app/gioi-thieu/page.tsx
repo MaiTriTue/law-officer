@@ -1,13 +1,33 @@
 import { faListUl } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 import React from 'react';
+import { AiFillHome, AiOutlineDoubleRight } from 'react-icons/ai';
 
 const Introduce: React.FC = () => {
     return (
         <div className="w-full">
-            <div className="w-full xl:w-[1100px] xl:mx-auto px-2.5 py-10">
+            <div className="w-full xl:w-[1100px] xl:mx-auto px-2.5 pt-5 pb-10">
+                <div className="w-full px-2.5 py-1 mb-10 bg-[#F1F1F1] rounded shadow-sm shadow-[#c2bfbf]">
+                    <div className="inline-block">
+                        <Link
+                            href={'/'}
+                            className="text-xs flex justify-center items-center"
+                        >
+                            <AiFillHome className=" mr-1" />
+                            Trang chủ
+                        </Link>
+                    </div>
+                    <span className="px-1">
+                        <AiOutlineDoubleRight className="text-[#ccc] text-sm inline-block" />
+                    </span>
+                    <div className="inline-block text-xs">Giới Thiệu</div>
+                </div>
                 <div className="w-full">
-                    <h1 className=" mb-10 text-3xl font-bold text-[#ff3a3a] text-center">
-                        Về chúng tôi
+                    <h1 className=" mb-10 text-xl font-bold text-[#ff3a3a] text-center">
+                        Giới Thiệu
+                        <span className="block">
+                            Công Ty Luật PHÚC MINH ANH
+                        </span>
                     </h1>
                     <div className="w full">
                         <p className="text-[15px] mb-2.5 indent-3">
@@ -69,11 +89,21 @@ const Introduce: React.FC = () => {
                             hoặc qua số điện thoại 0703-681-368.
                         </p>
 
-                        <p className="text-[15px] mb-2.5 indent-3">
+                        <p className="text-[15px] mb-4 indent-3">
                             Xin cảm ơn bạn đã quan tâm đến công ty TNHH MTV Phúc
                             Minh Anh. Chúng tôi hy vọng có cơ hội được phục vụ
                             và giúp đỡ bạn trong tương lai gần !
                         </p>
+                        <div className="grid grid-cols-2">
+                            <div className="col-span-1 col-start-2 text-center">
+                                <p className="text-[15px] mb-2.5 indent-3 uppercase font-medium">
+                                    Giám Đốc
+                                </p>
+                                <p className="text-[15px] mb-2.5 indent-3">
+                                    Luật Sư <strong>Lê Huy Vịnh</strong>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

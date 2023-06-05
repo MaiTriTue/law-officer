@@ -67,6 +67,7 @@ const Header: React.FC = () => {
     return (
         <div className=" w-full transition-all">
             {/* start contact */}
+
             <div className="w-full h-8 px-2 xl:px-0 flex justify-center bg-[#f5f5f5] border-b border-solid border-[#ddd] ">
                 <div className="w-full h-8 px-2 flex justify-between xl:w-[1100px] xl:px-0">
                     <div className="flex items-center ">
@@ -101,6 +102,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
             </div>
+
             {/* end contact */}
             {/* start logo and slogan */}
             <div className="w-full xl:w-[1100px] flex justify-between mx-auto">
@@ -261,7 +263,6 @@ const Header: React.FC = () => {
             <div
                 ref={ShowMenuRef}
                 className="w-full min-h-full  bg-black04 fixed top-0 left-0 right-0 bottom-0  hidden "
-                // className="w-full bg-black04  fixed top-0 left-0 bottom-0 right-0  hidden"
             >
                 <div className=" w-3/4 h-full min-h-[100vh] bg-[#222222]   flex   justify-end relative  ">
                     <div className="w-full ">
@@ -414,6 +415,7 @@ const Header: React.FC = () => {
                                         return (
                                             <Link
                                                 href={item.link}
+                                                onClick={HandleCloseMenu}
                                                 key={index}
                                                 className="py-1.5 pl-3 flex  justify-start items-center  text-[#cccccc] border-b  border-[#2D2D2D]"
                                             >

@@ -3,12 +3,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 import Image from 'next/image';
-import { AiFillCaretDown } from 'react-icons/ai';
+import {
+    AiFillCaretDown,
+    AiFillHome,
+    AiOutlineDoubleRight,
+} from 'react-icons/ai';
 import NewApost from '~/components/Home/NewApost';
 import ListNewPost from '~/components/Home/ListNewPost';
 import SearchAndContact from '~/components/Home/SearchAndContact';
 import ListPost from '~/components/Home/ListPost';
-
+import Link from 'next/link';
 import {
     DICHVU_LUATSU,
     TUVAN_PHAPLUAT,
@@ -41,7 +45,7 @@ import {
 } from '~/FakeDatas';
 import PostsInField from '~/components/Home/PostsInField';
 
-export default function Home() {
+const LawyerServices: React.FC = () => {
     const [DataInfield, setDataInfield] = useState<Array<any>>([]);
 
     useEffect(() => {
@@ -184,10 +188,24 @@ export default function Home() {
         ]);
     }, []);
 
-    console.log(DataInfield[0]);
     return (
-        <main className="w-full ">
+        <div className="w-full ">
             <div className="w-full xl:w-[1100px] my-0 mx-auto  py-2 xl:py-5">
+                <div className="w-full px-2.5 py-1 mb-10 bg-[#F1F1F1] rounded shadow-sm shadow-[#c2bfbf]">
+                    <div className="inline-block">
+                        <Link
+                            href={'/'}
+                            className="text-xs flex justify-center items-center"
+                        >
+                            <AiFillHome className=" mr-1" />
+                            <p>Trang chủ</p>
+                        </Link>
+                    </div>
+                    <span className="px-1">
+                        <AiOutlineDoubleRight className="text-[#ccc] text-sm inline-block" />
+                    </span>
+                    <div className="inline-block text-xs">Dịch vụ luật sư</div>
+                </div>
                 <div className="w-full  xl:h-[430px] pb-3 mb-2.5 flex flex-col xl:flex-row justify-start items-start  overflow-hidden border-b border-[#ccc] ">
                     <div className="w-full xl:w-[50%]   border-r border-[#ccc]">
                         <NewApost data={GoodPostData[0]} />
@@ -219,6 +237,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     );
-}
+};
+
+export default LawyerServices;

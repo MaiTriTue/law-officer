@@ -1,8 +1,6 @@
-
 export interface Post {
-    
-    title?: string,
-    link?: string,
-    image?: string,
-    discription?: string,
+    title: string;
+    link: string;
+    image: string;
+    discription: string;
 }

@@ -21,7 +21,6 @@ const ListNewPost: React.FC = () => {
                 </h1>
             </div>
 
-            {/* ddang suwar */}
             <div className="w-full h-[380px] xl:h-[340px]    overflow-y-scroll ">
                 {newPostData &&
                     newPostData.map((item, index) => {

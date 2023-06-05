@@ -43,7 +43,7 @@ const NavbarData = [
     },
     {
         title: 'dịch vụ luật sư',
-        link: '#',
+        link: '/dich-vu-luat-su',
         image: '',
         discription: '',
     },

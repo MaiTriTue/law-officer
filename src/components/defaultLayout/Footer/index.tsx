@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                         </h3>
                     </div>
                     <div className="w-full">
-                        <p className="w-full mb-4">
+                        <div className="w-full mb-4">
                             <BsFillBuildingFill className="inline mr-2" />
                             <strong className="mr-2">Trụ sở chính:</strong>
                             {COMPANY_INFORMATION.address}. [
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                                 </Link>
                             </div>
                             ]
-                        </p>
+                        </div>
                         <p className="w-full mb-4">
                             <BsFillTelephoneFill className="inline mr-2" />
                             <strong className="mr-2"> Điện thoại:</strong>
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="w-full"></div>
                 </div>
-                {/* dia chi tieng anh */}
+
                 <div className="w-full px-[15px]  pb-4 mb-5 col-span-1  ">
                     <div className="w-full mb-6 ">
                         <h3 className=" text-[18px] inline-block uppercase pb-1  relative before:absolute before:inset-0 before:w-1/5  before:border-b-2 before:border-[#ff9400]  ">
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                         </h3>
                     </div>
                     <div className="w-full">
-                        <p className="w-full mb-4">
+                        <div className="w-full mb-4">
                             <BsFillBuildingFill className="inline mr-2" />
                             <strong className="mr-2">Headquarters:</strong>
                             {COMPANY_INFORMATION_EN.address}. [
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                                 </Link>
                             </div>
                             ]
-                        </p>
+                        </div>
                         <p className="w-full mb-4">
                             <BsFillTelephoneFill className="inline mr-2" />
                             <strong className="mr-2"> Phone:</strong>

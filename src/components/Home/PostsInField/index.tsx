@@ -11,7 +11,7 @@ import { Post } from '~/models/Post';
 
 interface Props {
     title?: string;
-    link?: string;
+    link: string;
     data?: Array<Post>;
 }
 
@@ -26,7 +26,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
         <div className="w-full pb-5">
             <div className="w-full bg-[#E8E8E8]">
                 <Link
-                    href={link ? link : '/'}
+                    href={link}
                     className="inline-block text-base text-[#A52A2A]"
                 >
                     <h3 className=" px-3 py-1 font-bold inline-block  border-b-2 border-[#F3A400] ">
@@ -39,7 +39,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
                     <div className="w-full xl:w-3/5 xl:pr-2.5">
                         <h3 className="w-full py-2 mb-2">
                             <Link
-                                href={link ? link : '/'}
+                                href={link}
                                 className="w-full text-base font-bold"
                             >
                                 {data[0].title}
@@ -47,10 +47,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
                         </h3>
                         <div className="w-full line-clamp-6 overflow-hidden">
                             <div className="w-[40%] px-2.5 pb-2.5 float-left">
-                                <Link
-                                    href={link ? link : '/'}
-                                    className="w-full "
-                                >
+                                <Link href={link} className="w-full ">
                                     <img
                                         src={data[0].image}
                                         alt={data[0].title}
@@ -71,7 +68,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
                                     >
                                         <BsDot className="w-4 text-[#666666]" />
                                         <Link
-                                            href={item.link ? item.link : '/'}
+                                            href={item.link}
                                             className="line-clamp-1 text-xs text-[#666666]"
                                         >
                                             {item.title}
@@ -95,7 +92,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
                                 >
                                     <BsDot className="w-4 text-[#666666]" />
                                     <Link
-                                        href={item.link ? item.link : '/'}
+                                        href={item.link}
                                         className="line-clamp-1 text-sm text-[#666666]"
                                     >
                                         {item.title}
