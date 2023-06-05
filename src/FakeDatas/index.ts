@@ -4,10 +4,25 @@ import images from '~/assets/images';
 const COMPANY_INFORMATION = {
     organization: 'ĐOÀN LUẬT SƯ TP.HỒ CHÍ MINH',
     name: 'CÔNG TY LUẬT TNHH MTV PHÚC MINH ANH',
+    lawyer: 'LÊ HUY VỊNH',
+    position: 'Giám Đốc',
     phoneNumber: '0703681368',
     Tel: '703681368',
     email: 'luatsuhuyvinh@gmail.com',
     address: 'Tầng trệt 45 Nguyễn Minh Hoàng, P.12, Q.Tân Bình, Tp Hồ Chí Minh',
+    MST: '0317093317',
+    logo: images.LogoCompany,
+};
+const COMPANY_INFORMATION_EN = {
+    organization: 'HOCHIMINH CITY BAR ASSOCIATION',
+    name: 'PMA LAW PIRM',
+    lawyer: 'LE HUY VINH',
+    position: 'Head Branch',
+    phoneNumber: '0703681368',
+    Tel: '703681368',
+    email: 'luatsuhuyvinh@gmail.com',
+    address:
+        'Ground floor 45 Nguyen Minh Hoang, Ward 12, Tan Binh District, Ho Chi Minh City',
     MST: '0317093317',
     logo: images.LogoCompany,
 };
@@ -2422,6 +2437,7 @@ const INFOBASE_LIST = [
 
 export {
     COMPANY_INFORMATION,
+    COMPANY_INFORMATION_EN,
     NavbarData,
     SubNavbarData,
     NewPostData,
