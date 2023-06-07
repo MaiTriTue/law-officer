@@ -1,10 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-
 import { Header, Footer } from '~/components/defaultLayout';
-// import MessagePlugin from '~/components/MessagePlugin';
 import images from '~/assets/images';
-import MessagePlugin from '~/components/MessagePlugin';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,9 +22,6 @@ export default function RootLayout({
     return (
         <html lang="vi">
             <body className={inter.className}>
-                {/* <MessagePlugin /> */}
-                <MessagePlugin />
-
                 <Header />
                 {children}
                 <Footer />
