@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import { Header, Footer } from '~/components/defaultLayout';
 import images from '~/assets/images';
+import MessegerPage from '~/components/MessegerPage';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
     return (
         <html lang="vi">
             <body className={inter.className}>
-                <div id="fb-root"></div>
+                {/* <div id="fb-root"></div>
 
                 <div id="fb-customer-chat" className="fb-customerchat"></div>
                 <Script
@@ -54,7 +55,9 @@ export default function RootLayout({
                             fjs.parentNode.insertBefore(js, fjs);
                         }(document, 'script', 'facebook-jssdk'));}`,
                     }}
-                ></Script>
+                ></Script> */}
+
+                <MessegerPage />
                 <Header />
                 {children}
                 <Footer />
