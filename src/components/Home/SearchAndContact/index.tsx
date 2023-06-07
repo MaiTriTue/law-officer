@@ -98,6 +98,8 @@ const SearchAndContact: React.FC = () => {
                         <Image
                             src={images.counSelors1}
                             alt="lien he"
+                            width={600}
+                            height={400}
                             className="w-full object-cover "
                         />
                     </Link>

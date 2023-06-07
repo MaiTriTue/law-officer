@@ -11,7 +11,7 @@ const ListPost: React.FC = () => {
     const [ListPostData, setListPostData] = useState(GoodPostData);
     useEffect(() => {
         setListPostData(GoodPostData);
-    }, [GoodPostData]);
+    }, []);
 
     return (
         <div className="w-full">
@@ -29,9 +29,11 @@ const ListPost: React.FC = () => {
                                             href={item.link}
                                             className="w-full "
                                         >
-                                            <img
+                                            <Image
                                                 src={item.image}
                                                 alt={item.title}
+                                                width={600}
+                                                height={400}
                                                 className="w-full object-cover "
                                             />
                                         </Link>

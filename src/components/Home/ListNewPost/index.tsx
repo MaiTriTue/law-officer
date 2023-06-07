@@ -12,7 +12,7 @@ const ListNewPost: React.FC = () => {
 
     useEffect(() => {
         setNewPostData(NewPostData);
-    }, [NewPostData]);
+    }, []);
     return (
         <div className="w-full px-[10px]">
             <div className="w-full mb-2.5 border-b border-[#ccc]">

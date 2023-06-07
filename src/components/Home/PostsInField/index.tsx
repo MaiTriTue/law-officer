@@ -20,7 +20,7 @@ const PostsInField: React.FC<Props> = (props: Props) => {
     const [ListPostData, setListPostData] = useState(GoodPostData);
     useEffect(() => {
         setListPostData(GoodPostData);
-    }, [GoodPostData]);
+    }, []);
 
     return (
         <div className="w-full pb-5">
@@ -48,9 +48,11 @@ const PostsInField: React.FC<Props> = (props: Props) => {
                         <div className="w-full line-clamp-6 overflow-hidden">
                             <div className="w-[40%] px-2.5 pb-2.5 float-left">
                                 <Link href={link} className="w-full ">
-                                    <img
+                                    <Image
                                         src={data[0].image}
                                         alt={data[0].title}
+                                        width={600}
+                                        height={400}
                                         className="w-full object-cover "
                                     />
                                 </Link>
