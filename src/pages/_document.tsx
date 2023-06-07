@@ -4,12 +4,10 @@ import Script from 'next/script';
 export default function Document() {
     return (
         <Html lang="vi">
-            <Head>{/* code block */}</Head>
+            <Head></Head>
             <body>
-                {/* <!-- Messenger Chat plugin Code --> */}
                 <div id="fb-root"></div>
 
-                {/* <!-- Your Chat plugin code --> */}
                 <div id="fb-customer-chat" className="fb-customerchat"></div>
                 <Script
                     id="messenger-tag"
