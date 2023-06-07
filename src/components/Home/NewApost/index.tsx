@@ -26,7 +26,7 @@ const NewApost: React.FC<Props> = (props: Props) => {
                 <div className="w-full px-3 pt-3 xl:pt-0 overflow-hidden">
                     <div className="w-full  xl:h-[250px] rounded  overflow-hidden">
                         <Link href={newApost.link} className="w-full ">
-                            <Image
+                            <img
                                 src={newApost.image}
                                 alt={newApost.title}
                                 className="w-full object-cover  xl:mt-12"

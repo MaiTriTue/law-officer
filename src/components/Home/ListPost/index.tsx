@@ -29,7 +29,7 @@ const ListPost: React.FC = () => {
                                             href={item.link}
                                             className="w-full "
                                         >
-                                            <Image
+                                            <img
                                                 src={item.image}
                                                 alt={item.title}
                                                 className="w-full object-cover "
