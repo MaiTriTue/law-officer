@@ -49,38 +49,43 @@ const NavbarData = [
     },
     {
         title: 'tư vấn pháp luật',
-        link: '#',
+        link: '/tu-van-phap-luat',
         image: '',
         discription: '',
     },
     {
         title: 'văn bản pháp luật',
-        link: '#',
+        link: '/van-ban-phap-luat',
         image: '',
         discription: '',
     },
     {
         title: 'biểu mẫu',
-        link: '#',
+        link: '/bieu-mau',
         image: '',
         discription: '',
     },
     {
         title: 'giáo dục',
-        link: '#',
+        link: '/giao-duc',
         image: '',
         discription: '',
     },
     {
         title: 'liên hệ',
-        link: '#',
+        link: '/lien-he',
         image: '',
         discription: '',
     },
 ];
 
 const SubNavbarData = [
-    { title: 'Tư vấn luật doanh nghiệp', link: '', image: '', discription: '' },
+    {
+        title: 'Tư vấn luật doanh nghiệp',
+        link: '/tu-van-phap-luat/tu-van-luat-doanh-nghiep',
+        image: '',
+        discription: '',
+    },
     { title: 'Tư vấn luật đầu tư', link: '', image: '', discription: '' },
     { title: 'Tư vấn luật lao động', link: '', image: '', discription: '' },
     { title: 'Tư vấn luật thuế', link: '', image: '', discription: '' },

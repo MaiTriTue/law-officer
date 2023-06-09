@@ -204,7 +204,7 @@ const LawyerServices: React.FC = () => {
                     <span className="px-1">
                         <AiOutlineDoubleRight className="text-[#ccc] text-sm inline-block" />
                     </span>
-                    <div className="inline-block text-xs">Dịch vụ luật sư</div>
+                    <div className="inline-block text-xs">Biểu mẫu</div>
                 </div>
                 <div className="w-full  xl:h-[430px] pb-3 mb-2.5 flex flex-col xl:flex-row justify-start items-start  overflow-hidden border-b border-[#ccc] ">
                     <div className="w-full xl:w-[50%]   border-r border-[#ccc]">
