@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import Image from 'next/image';
 import { AiFillCaretDown } from 'react-icons/ai';
-import NewApost from '~/components/Home/newApost';
-import ListNewPost from '~/components/Home/listNewPost';
-import SearchAndContact from '~/components/Home/searchAndContact';
-import ListPost from '~/components/Home/listPost';
+import NewApost from '~/components/Home/NewApost';
+import ListNewPost from '~/components/Home/ListNewPost';
+import SearchAndContact from '~/components/Home/SearchAndContact';
+import ListPost from '~/components/Home/ListPost';
 
 import {
     DICHVU_LUATSU,
@@ -39,7 +39,7 @@ import {
     DICHVU_NOIBAT,
     GoodPostData,
 } from '~/FakeDatas';
-import PostsInField from '~/components/Home/postsInField';
+import PostsInField from '~/components/Home/PostsInField';
 
 export default function Home() {
     const [DataInfield, setDataInfield] = useState<Array<any>>([]);
